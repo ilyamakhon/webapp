@@ -5,6 +5,6 @@ import by.makhon.webapp.controller.NewsController;
 public class Main {
     public static void main(String[] args) {
         NewsController newsController = new NewsController();
-        newsController.getNewsByID(1L);
+        newsController.getNewsByID((long) 1);
     }
 }
