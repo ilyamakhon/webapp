@@ -1,10 +1,9 @@
 package by.makhon.webapp.controller;
 
-import by.makhon.webapp.DAO.NewsDAO;
+import by.makhon.webapp.dao.NewsDAO;
 import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dto.NewsDTO;
-import by.makhon.webapp.newsconverter.NewsConverter;
-import by.makhon.webapp.services.NewsService;
+import by.makhon.webapp.converter.NewsConverter;
 
 import java.util.ArrayList;
 

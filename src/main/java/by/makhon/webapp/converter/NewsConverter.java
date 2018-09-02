@@ -1,4 +1,4 @@
-package by.makhon.webapp.newsconverter;
+package by.makhon.webapp.converter;
 
 import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dto.NewsDTO;

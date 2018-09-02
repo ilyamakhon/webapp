@@ -1,6 +1,6 @@
 package by.makhon.webapp.services;
 
-import by.makhon.webapp.DAO.NewsDAO;
+import by.makhon.webapp.dao.NewsDAO;
 import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dbconnection.ConnectionFactory;
 
@@ -63,8 +63,8 @@ public class NewsService implements NewsDAO<News> {
     }
 
     @Override
-    public void deleteNews(News news) {
-        String deleteSQLQuery="DELETE FROM news WHERE news.newsID="+news.getId()+" ;";
+    public void deleteNews(Long newsID) {
+        String deleteSQLQuery="DELETE FROM news WHERE news.newsID="+newsID+" ;";
         try (   Connection conn = ConnectionFactory.getConnection();
                 Statement stm = conn.createStatement()){
             stm.executeUpdate(deleteSQLQuery);
