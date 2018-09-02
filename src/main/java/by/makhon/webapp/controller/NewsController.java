@@ -6,7 +6,7 @@ import by.makhon.webapp.dto.NewsDTO;
 import by.makhon.webapp.converter.NewsConverter;
 import by.makhon.webapp.services.NewsService;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class NewsController {
 
@@ -24,7 +24,7 @@ public class NewsController {
         return newsDTO;
     }
 
-    public ArrayList<NewsDTO> getAllNews() {
+    public List<NewsDTO> getAllNews() {
         return newsConverter.convertAllToDTO(newsService.getAllNews());
     }
 

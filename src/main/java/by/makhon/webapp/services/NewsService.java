@@ -6,6 +6,7 @@ import by.makhon.webapp.dbconnection.ConnectionFactory;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class NewsService implements NewsDAO<News> {
 
@@ -30,9 +31,9 @@ public class NewsService implements NewsDAO<News> {
     }
 
     @Override
-    public ArrayList<News> getAllNews() {
+    public List<News> getAllNews() {
         String getAllSQLQuery = "SELECT * FROM news;";
-        ArrayList<News> newsList = new ArrayList<>();
+        List<News> newsList = new ArrayList<>();
         try(    Connection conn = ConnectionFactory.getConnection();
                 Statement stmt = conn.createStatement();
                 ResultSet result = stmt.executeQuery(getAllSQLQuery)){

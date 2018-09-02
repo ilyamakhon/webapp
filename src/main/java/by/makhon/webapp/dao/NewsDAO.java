@@ -1,11 +1,11 @@
 package by.makhon.webapp.dao;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface NewsDAO<News> {
     void insertNews(News news);
     News getNewsByID(Long newsID);
-    ArrayList<News> getAllNews();
+    List<News> getAllNews();
     void updateNews(News adr);
     void deleteNews(Long newsID);
     void deleteAllNews();

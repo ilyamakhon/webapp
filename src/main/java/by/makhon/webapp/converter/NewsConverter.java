@@ -4,6 +4,7 @@ import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dto.NewsDTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class NewsConverter {
 
@@ -19,8 +20,8 @@ public class NewsConverter {
         return newsDTO;
     }
 
-    public ArrayList<NewsDTO> convertAllToDTO(ArrayList<News> newsList) {
-        ArrayList<NewsDTO> newsDTOList = new ArrayList<>();
+    public List<NewsDTO> convertAllToDTO(List<News> newsList) {
+        List<NewsDTO> newsDTOList = new ArrayList<>();
         for(News i: newsList) {
             newsDTOList.add(this.convertToDTO(i));
         }
