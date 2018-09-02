@@ -4,19 +4,20 @@ import by.makhon.webapp.dao.NewsDAO;
 import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dto.NewsDTO;
 import by.makhon.webapp.converter.NewsConverter;
+import by.makhon.webapp.services.NewsService;
 
 import java.util.ArrayList;
 
 public class NewsController {
 
-    private NewsDAO<News> newsDAO;
-    private NewsDTO newsDTO;
+    private NewsService newsService ;
     private News news;
     private NewsConverter newsConverter;
 
     public NewsDTO getNewsByID(Long newsID) {
+        NewsDTO newsDTO = new NewsDTO();
         if (newsID != null) {
-            newsDTO = newsConverter.convertToDTO(newsDAO.getNewsByID(newsID));
+            newsDTO = newsConverter.convertToDTO(newsService.getNewsByID(newsID));
         }else{
             System.out.println("ERROR - Could not find news newsID is null");
         }
@@ -24,12 +25,12 @@ public class NewsController {
     }
 
     public ArrayList<NewsDTO> getAllNews() {
-        return newsConverter.convertAllToDTO(newsDAO.getAllNews());
+        return newsConverter.convertAllToDTO(newsService.getAllNews());
     }
 
-    public void insertNews() { newsDAO.insertNews(news); }
+    public void insertNews() { newsService.insertNews(news); }
 
-    public void deleteNews() { newsDAO.deleteNews(news); }
+    public void deleteNews(Long newsID) { newsService.deleteNews(newsID); }
 
-    public void updateNews() { newsDAO.deleteAllNews(); }
+    public void updateNews() { newsService.deleteAllNews(); }
 }
