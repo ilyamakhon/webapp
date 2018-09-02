@@ -11,7 +11,6 @@ import java.util.List;
 public class NewsController {
 
     private NewsService newsService ;
-    private News news;
     private NewsConverter newsConverter;
 
     public NewsDTO getNewsByID(Long newsID) {
@@ -28,7 +27,10 @@ public class NewsController {
         return newsConverter.convertAllToDTO(newsService.getAllNews());
     }
 
-    public void insertNews() { newsService.insertNews(news); }
+    public void insertNews() {
+        News news = new News();
+        newsService.insertNews(news);
+    }
 
     public void deleteNews(Long newsID) { newsService.deleteNews(newsID); }
 
