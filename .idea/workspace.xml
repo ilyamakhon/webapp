@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d71c543-44b6-43ae-b509-7033e8d1fefa" name="Default Changelist" comment="">
+    <list default="true" id="4d71c543-44b6-43ae-b509-7033e8d1fefa" name="Default Changelist" comment="Latest commit adding new">
+      <change afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/DAO/NewsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/connectionpool/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/makhon/webapp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/makhon/webapp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/by/makhon/webapp/connectionpool/ConnectionPool.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/makhon/webapp/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/makhon/webapp/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/by/makhon/webapp/dbconnection/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/makhon/webapp/dbconnection/ConnectionFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/by/makhon/webapp/services/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/by/makhon/webapp/services/NewsService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,40 +65,44 @@
     <session id="3267278">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
-          <entry key="sql" value="2" />
+          <entry key="class" value="1" />
+          <entry key="java" value="14" />
+          <entry key="sql" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="Scratch" value="2" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="14" />
+          <entry key="Scratch" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2288" />
-          <entry key="sql" value="154" />
-          <entry key="txt" value="20" />
-          <entry key="xml" value="26" />
+          <entry key="dummy" value="8" />
+          <entry key="java" value="5221" />
+          <entry key="sql" value="281" />
+          <entry key="txt" value="46" />
+          <entry key="xml" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2288" />
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="SQL" value="19" />
-          <entry key="Scratch" value="135" />
-          <entry key="XML" value="26" />
+          <entry key="JAVA" value="5219" />
+          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="SQL" value="28" />
+          <entry key="Scratch" value="255" />
+          <entry key="XML" value="33" />
         </counts>
       </usages-collector>
     </session>
@@ -105,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="561">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -114,10 +121,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="704">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#News#0;class#News#0" />
+                <element signature="method#News#0;class#News#0" />
                 <element signature="e#1386#1387#0" expanded="true" />
                 <element signature="e#1455#1456#0" expanded="true" />
               </folding>
@@ -126,43 +135,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/dto/NewsDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="264">
+              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getNewsByID#0;class#NewsController#0" />
               </folding>
             </state>
           </provider>
@@ -171,10 +150,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="275">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#convertToDTO#0;class#NewsConverter#0" />
               </folding>
             </state>
           </provider>
@@ -183,29 +163,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="724">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getByID#0;class#NewsService#0" />
+                <element signature="method#getAllNews#0;class#NewsService#0" />
+                <element signature="method#insertNews#0;class#NewsService#0" />
+                <element signature="method#deleteNews#0;class#NewsService#0" />
+                <element signature="method#deleteAllNews#0;class#NewsService#0" />
+                <element signature="method#updateNews#0;class#NewsService#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/DAO/NewsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_1.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="372">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -213,18 +190,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="494">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -242,20 +214,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/dto/NewsDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/NewsConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/GetNews.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/GetNewsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/connectionpool/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/DBConnect.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_3.sql" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_4.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/DAO/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/DAO/NewsDAO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_5.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java" />
       </list>
     </option>
   </component>
@@ -296,6 +274,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,6 +333,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="dbconnection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,7 +375,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -395,7 +382,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535835770899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535895667601" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/NetBeansProjects/mavenproject1" />
     <property name="project.structure.last.edited" value="Project" />
@@ -414,7 +401,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="ConnectionFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.makhon.webapp.dbconnection.ConnectionFactory" />
+      <module name="webapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.makhon.webapp.dbconnection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.makhon.webapp.Main" />
       <module name="webapp" />
@@ -428,9 +428,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ConnectionFactory" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ConnectionFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -446,7 +451,8 @@
       <updated>1535654790987</updated>
       <workItem from="1535654797624" duration="2618000" />
       <workItem from="1535721807204" duration="14595000" />
-      <workItem from="1535834317034" duration="1466000" />
+      <workItem from="1535834317034" duration="8348000" />
+      <workItem from="1535887619239" duration="8036000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1535733845439</created>
@@ -459,12 +465,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18679000" />
+    <option name="totallyTimeSpent" value="33597000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -473,18 +488,19 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.27765727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3253796" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946696" weight="0.329718" />
-      <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.40347072" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -495,6 +511,39 @@
       <window_info anchor="right" id="Database" order="7" weight="0.19509594" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.27765727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3253796" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.40347072" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.19509594" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -510,18 +559,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/model/NewsModel.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/NewsConverter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/GetNews.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/dto/NewsDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -554,13 +591,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/connectionpool/ConnectionPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/connectionpool/ConnectionPool.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -568,57 +599,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.12/mysql-connector-java-8.0.12.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="477">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_3.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/bean/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#News#0;class#News#0" />
+            <element signature="method#News#0;class#News#0" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/newsconverter/NewsConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#convertToDTO#0;class#NewsConverter#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/dbconnection/ConnectionFactory.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0ae73f5b-f6a3-4583-b3ba-c87fd4e6a9b9/console_5.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="264">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getNewsByID#0;class#NewsController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/services/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getByID#0;class#NewsService#0" />
+            <element signature="method#getAllNews#0;class#NewsService#0" />
+            <element signature="method#insertNews#0;class#NewsService#0" />
+            <element signature="method#deleteNews#0;class#NewsService#0" />
+            <element signature="method#deleteAllNews#0;class#NewsService#0" />
+            <element signature="method#updateNews#0;class#NewsService#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="319">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/makhon/webapp/DAO/NewsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

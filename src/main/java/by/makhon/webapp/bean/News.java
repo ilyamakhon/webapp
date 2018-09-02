@@ -50,6 +50,17 @@ public class News {
         this.picURL = picURL;
     }
 
+    public News() {
+    }
+
+    public News(Long id, String title, String content, Date date, String picURL) {
+        this.id = id;
+        this.title = title;
+        this.content = content;
+        this.date = date;
+        this.picURL = picURL;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

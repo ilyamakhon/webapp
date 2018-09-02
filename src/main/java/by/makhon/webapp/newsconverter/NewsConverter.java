@@ -3,6 +3,8 @@ package by.makhon.webapp.newsconverter;
 import by.makhon.webapp.bean.News;
 import by.makhon.webapp.dto.NewsDTO;
 
+import java.util.ArrayList;
+
 public class NewsConverter {
 
     private NewsDTO newsDTO = new NewsDTO();
@@ -15,5 +17,13 @@ public class NewsConverter {
         newsDTO.setDate(news.getDate());
 
         return newsDTO;
+    }
+
+    public ArrayList<NewsDTO> convertAllToDTO(ArrayList<News> newsList) {
+        ArrayList<NewsDTO> newsDTOList = new ArrayList<>();
+        for(News i: newsList) {
+            newsDTOList.add(this.convertToDTO(i));
+        }
+        return newsDTOList;
     }
 }
