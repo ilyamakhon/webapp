@@ -1107,47 +1107,98 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="278" parent="7" name="news"/>
-    <column id="279" parent="278" name="newsID">
+    <table id="278" parent="7" name="comments"/>
+    <table id="279" parent="7" name="news"/>
+    <table id="280" parent="7" name="users"/>
+    <column id="281" parent="278" name="commentID">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="278" name="newsTitle">
+    <column id="282" parent="278" name="commentContent">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="278" name="newsContent">
+    <column id="283" parent="278" name="userID">
+      <Position>3</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="284" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>commentID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="285" parent="279" name="newsID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="279" name="newsTitle">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="279" name="newsContent">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="278" name="newsDate">
+    <column id="288" parent="279" name="newsDate">
       <Position>4</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="278" name="newsPic">
+    <column id="289" parent="279" name="newsPic">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="284" parent="278" name="news_newsID_uindex">
+    <index id="290" parent="279" name="news_newsID_uindex">
       <ColNames>newsID</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="285" parent="278" name="PRIMARY">
+    <key id="291" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>newsID</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="286" parent="278" name="news_newsID_uindex">
+    <key id="292" parent="279" name="news_newsID_uindex">
       <ColNames>newsID</ColNames>
       <UnderlyingIndexName>news_newsID_uindex</UnderlyingIndexName>
+    </key>
+    <column id="293" parent="280" name="userID">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="294" parent="280" name="role">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="295" parent="280" name="login">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="296" parent="280" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="297" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>userID</ColNames>
+      <Primary>1</Primary>
     </key>
   </database-model>
 </dataSource>
