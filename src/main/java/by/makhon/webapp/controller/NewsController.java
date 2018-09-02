@@ -6,6 +6,7 @@ import by.makhon.webapp.dto.NewsDTO;
 import by.makhon.webapp.converter.NewsConverter;
 import by.makhon.webapp.services.NewsService;
 
+import java.util.Date;
 import java.util.List;
 
 public class NewsController {

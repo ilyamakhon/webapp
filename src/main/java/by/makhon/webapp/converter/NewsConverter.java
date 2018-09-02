@@ -8,9 +8,9 @@ import java.util.List;
 
 public class NewsConverter {
 
-    private NewsDTO newsDTO = new NewsDTO();
-
     public NewsDTO convertToDTO(News news) {
+        NewsDTO newsDTO = new NewsDTO();
+
         newsDTO.setId(news.getId());
         newsDTO.setContent(news.getContent());
         newsDTO.setPicURL(news.getPicURL());

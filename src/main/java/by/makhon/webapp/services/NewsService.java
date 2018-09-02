@@ -17,13 +17,14 @@ public class NewsService implements NewsDAO<News> {
         try(    Connection conn = ConnectionFactory.getConnection();
                 Statement stmt = conn.createStatement();
                 ResultSet result = stmt.executeQuery(getByIDSQLQuery)){
-
-            news.setId((long) result.getInt("newID"));
-            news.setTitle(result.getString("newsTitle"));
-            news.setContent(result.getString("newsContent"));
-            news.setPicURL(result.getString("newsPic"));
-            news.setDate(result.getDate("newsDate"));
-
+            while (result.next()) {
+                System.out.println(result.getString("newsContent"));
+                news.setId((long) result.getInt("newsID"));
+                news.setTitle(result.getString("newsTitle"));
+                news.setContent(result.getString("newsContent"));
+                news.setDate(result.getDate("newsDate"));
+                news.setPicURL(result.getString("newsPic"));
+            }
         }catch (SQLException ex) {
             ex.printStackTrace();
         }
