@@ -23,7 +23,7 @@ public class NewsController {
     @GetMapping("/{id}")
     public NewsDTO getNewsByID(@PathVariable("id") Long newsID) {
         if (newsID == null || newsID <= 0) {
-            throw new IllegalArgumentException("avav gavno");
+            throw new IllegalArgumentException("");
         }
 
         News news = newsService.getNewsByID(newsID);
@@ -52,7 +52,7 @@ public class NewsController {
     @DeleteMapping("/{id}")
     public void deleteNews(@PathVariable("id") Long newsID) {
         if (newsID == null || newsID <= 0) {
-            throw new IllegalArgumentException("avav gavno");
+            throw new IllegalArgumentException("");
         }
 
         newsService.deleteNews(newsID);
